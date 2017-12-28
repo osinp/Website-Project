@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Hello, world!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- CSS Default Div Name -->
+    <!-- make sure to use bootsrap utility classes instead of this -->
+    <!-- padding of 20 up and down, 10 left & right, border 1px thick, solid all the way around -->
+    <style>
+      /*  .row div{padding 20px 10px; border: 1px solid;}  */
+    </style>
+  </head>
+  <body>
+
+    <!-- Nav bar on the top of the page
+          navbar, main navbar class bs uses
+          navbar-toggable-sm, drop down toggable button from small screensizes and down
+          bg-info, background color
+          navbar-inverse, change color of links -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container">
+          <!-- button that hides the nav bar, data-toggle is the action button performs (collaps)
+                 that controls id mainNav -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+            <!-- Hamburger nav bar -->
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- thing that collapses, navbar-collapse specifies that the elemsnt that is collapsing is a navbar -->
+          <div class="collapse navbar-collapse" id="mainNav">
+              <!-- Nav within the nav bar -->
+              <div class="navbar-nav">
+                <!-- nav-item the way we describe a navigation bar element,
+                         active is the default location where you are at
+                         replace # with different page url's if they are meant to redirect to a differet page-->
+                <a class="nav-item nav-link active" href="">Home</a>
+                <a class="nav-item nav-link" href="">About</a>
+                <a class="nav-item nav-link" href="">Training</a>
+                <a class="nav-item nav-link" href="">Contact</a>
+          </div>
+        </div> <!-- closes container> -->
+      </div>
+    </nav> <!-- closes nav -->
+
+    <!-- JUMBOTRON -->
+    <!-- Banner that we can put images or text in it -->
+    <!-- Centered if in container, full screen if outside container class-->
+    <!-- Curved edges, jumbotron-fluid makes it flat and complete -->
+    <!-- bg-"text" changes background of jumbo, text-"text" changes text color -->
+    <div class="jumbotron jumbotron-fluid bg-info text-white text-center">
+      <!-- add a container to center text -->
+      <!-- Display 1 Changes heading to pop out more -->
+      <!-- Lead changes paragraph to make it bigger and pop out more -->
+      <div class="container">
+          <h1 class="display-1">Welcome to the Dojo</h1>
+          <p class="lead" >A guiding light for the less enlightened.</p>
+      </div>
+    </div>
+
+    <div class = "container" "text-muted">
+
+      <!-- cards -->
+      <!-- any number of elements each taking up x number of columns -->
+      <div class="row">
+
+        <div class="col-md-6 col-lg-3"> <!-- surrounding col class-->
+          <div class="card">
+            <!-- img src uses image from internet -->
+              <!-- card-img-top places on top of card -->
+              <!-- img-fluid auto dimensions the image to fit the card -->
+            <img src="https://blog.imgur.com/wp-content/uploads/2017/09/ida.jpg" class="card-img-top img-fluid">
+            <!-- extra padding around card itself -->
+            <div class="card-block">
+              <h3 class="card-title">Node.js Training</h3>
+              <p> Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components.</p>
+            </div>
+          </div>
+        </div> <!-- Closes out element -->
+
+        <div class="col-md-6 col-lg-3"> <!-- surrounding col class-->
+          <div class="card">
+            <!-- img src uses image from internet -->
+              <!-- card-img-top places on top of card -->
+              <!-- img-fluid auto dimensions the image to fit the card -->
+            <img src="https://blog.imgur.com/wp-content/uploads/2017/09/ida.jpg" class="card-img-top img-fluid">
+            <!-- extra padding around card itself -->
+            <div class="card-block">
+              <h3 class="card-title">Node.js Training</h3>
+              <p> Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3"> <!-- surrounding col class-->
+          <div class="card">
+            <!-- img src uses image from internet -->
+              <!-- card-img-top places on top of card -->
+              <!-- img-fluid auto dimensions the image to fit the card -->
+            <img src="https://blog.imgur.com/wp-content/uploads/2017/09/ida.jpg" class="card-img-top img-fluid">
+            <!-- extra padding around card itself -->
+            <div class="card-block">
+              <h3 class="card-title">Node.js Training</h3>
+              <p> Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components.</p>
+            </div>
+          </div>
+        </div> <!-- Closes out element -->
+
+        <div class="col-md-6 col-lg-3"> <!-- surrounding col class-->
+          <div class="card">
+            <!-- img src uses image from internet -->
+              <!-- card-img-top places on top of card -->
+              <!-- img-fluid auto dimensions the image to fit the card -->
+            <img src="https://blog.imgur.com/wp-content/uploads/2017/09/ida.jpg" class="card-img-top img-fluid"/>
+            <!-- extra padding around card itself -->
+            <div class="card-block">
+              <h3 class="card-title">Node.js Training</h3>
+              <p> Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components.</p>
+            </div>
+          </div>
+        </div> <!-- Closes out element -->
+
+      </div> <!-- Closes out row -->
+    </div> <!-- closes out container -->
+
+
+    <!-- Navs bar right where you are in the page -->
+    <!-- Utility class: Display 4, Center and padding= text-center, p(y=up and down, x - left and right)-# -->
+                                <!-- margin m y or x - # -->
+    <h2 class="display-4 text-center py-5 my-4">Meet The Speakers</h2>
+
+      <!-- justify-content-center, centers the elements in the class nav
+                          nav-pills, has the navigation tabs have a pill highlight
+                          flex-column, puts the nav elements in a column smallest to upwards, but
+                          flex-md-row, puts the nav elements in row for medium size screens and higher  -->
+      <nav class="nav justify-content-center nav-pills flex-column flex-md-row">
+        <!-- nav-link, creates a navigation element that the user can click on
+             active, chooses a default active nav element
+             href, #elementID
+             data-toggle-->
+        <a class="nav-link active" href="#ninja" data-toggle="tab">The Net Ninja</a>
+        <a class="nav-link" href="#wizard" data-toggle="tab">The Web Wizard</a>
+        <a class="nav-link" href="#capt" data-toggle="tab">The Captain Code</a>
+        <a class="nav-link" href="#avenger" data-toggle="tab">The Angular Avenger</a>
+      </nav>
+
+      <!-- respective nav content, py-5 = 5 padding up and down-->
+      <div class="tab-content py-5">
+        <!-- for the current active nav tab display this information -->
+        <div class="tab-pane active" id="ninja">
+          <h3>The Net Ninja</h3>
+          <p>Net <span data-toggle="tooltip" title="this is tooltip" class="text-info" data-placement="bottom">ninja</span> paragraph</p>
+        </div>
+        <div class="tab-pane" id="wizard">
+          <h3>The Web Wizard</h3>
+          <p>Net ninja paragraph</p>
+        </div>
+        <div class="tab-pane" id="capt">
+          <h3>The Captain Code</h3>
+          <p>Net ninja paragraph</p>
+        </div>
+        <div class="tab-pane" id="avenger">
+          <h3>The Angular Avenger</h3>
+          <p>Net ninja paragraph</p>
+        </div>
+  </div>
+
+
+      <h1>Hello, world!</h1> <!-- Heading 1-->
+      <h2> This is h2 </h2> <!-- Heading 2 -->
+      <p>This is a paragraph and is used to make sure it is processing instructions correctly</p>
+      <!-- Unordered list (ul), List element (li) -->
+      <ul>
+        <li>Unordered list1</li>
+        <li>Unordered list2</li>
+        <li>Unordered list3</li>
+      </ul>
+
+      <!-- Form is usally used for actions or to send information to another page-->
+      <form>
+          <label> Text Field form </label>
+          <input type="text" placeholder="placeholder"/>
+          <input type="submit" value="click me" />
+      </form>
+
+      <!-- Containers: Wrap and contain our content
+            Provide basic padding and margin to our content
+            Help us center our content on the page
+            Fluid = 100% of the viewport container
+            Fixed = Always have a maximum width and is centered on the page
+      -->
+
+      <!-- Fixed Container -->
+      <!-- Jumps at different breakpoints  -->
+      <!-- Depending on device/display field will dynamically change in size and center  -->
+      <div class="container" style="background: skyblue">
+        <h1>Fixed Container</h1>
+      </div>
+
+      <!-- Fluid Container -->
+      <div class="container-fluid" style="background: yellow">
+        <h1>Fluid Container</h1>
+      </div>
+
+
+      <div class="container">
+      <!-- Bootstrap Grid 12 Columns by x rows -->
+          <!-- Can separate content by rows and columns
+               By limiting how many columns each content takes -->
+      <div class="row" style="background: skyblue">
+         <!-- two elements  -->
+         <!-- small screen sizes and upwards, 6 columns in width  -->
+         <div class="col-sm-6">actual element 1</div>
+         <div class="col-sm-6">actual element 2</div>
+      </div>
+cxvxcv
+
+
+      <div class="row" style="background: pink">
+         <!-- meduum screen sizes and upwards, if large than 3 columns in width  -->
+         <!-- can set multiple conditions in div class that change element when condition is met -->
+         <div class="col-md-6 col-lg-3">col md 6 then col large 3</div>
+         <div class="col-md-6 col-lg-3">actual element 2</div>
+         <div class="col-md-6 col-lg-3">actual element 1</div>
+         <div class="col-md-6 col-lg-3">actual element 2</div>
+      </div>
+
+
+      <div class="row" style="background: yellow">
+         <!-- for any screen size make element only 3 columns  -->
+         <!-- can set multiple conditions in div class that change element when condition is met -->
+         <div class="col-3">col md 6 then col large 3</div>
+         <div class="col-3">actual element 2</div>
+         <div class="col-3">actual element 1</div>
+         <div class="col-3">actual element 2</div>
+      </div>
+
+
+      <!-- Uses flex property to assume column width -->
+      <div class="row" style="background: purple">
+         <!-- two elements  -->
+         <!-- medium screen sizes and upwards -->
+         <!-- if small then stack  -->
+         <div class="col-md">Flex properties 1</div>
+         <div class="col-md-6">Flex properties 2</div>
+         <div class="col-md">Flex properties 3</div>
+         <div class="col-md">Flex properties 4</div>
+      </div>
+
+      <!-- alignment properties -->
+      <div class="row justify-content-md-center">
+         <!-- meduum screen sizes and upwards, if large than 3 columns in width  -->
+         <!-- can set multiple conditions in div class that change element when condition is met -->
+         <div class="col-md-2">1 col-md 2</div>
+         <div class="col-md-2">2 col-md 2</div>
+         <div class="col-md-2">3 col-md 2</div>
+      </div>
+
+    </div> <!-- Closes container -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+      </script>
+  </body>
+</html>
